@@ -31,7 +31,7 @@ hubble.init = function (json) {
 
     var container = document.querySelector('.lg-container');
     Rosetta.render(Rosetta.create('div', attributes, children), container);
-    document.querySelector('#loading').remove();
+    $('#loading').remove();
     container.style.opacity = 1;
 };
 
