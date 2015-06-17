@@ -106,90 +106,6 @@ hubble.init({
                 "enter": {},
                 "leave": {}
             }
-        }, {
-            "type": "image",
-            "name": "highlight",
-            "hidden": true,
-            "surface": {
-                "coordinate": "bottom",
-                "x": 20,
-                "y": -95,
-                "width": 59,
-                "height": 76,
-                "borderSize": 1,
-                "borderColor": "black",
-                "fill": "transparent"
-            },
-            "attributes": {
-                "src": "http://hiphotos.baidu.com/doc/pic/item/500fd9f9d72a6059ece156ac2d34349b023bba97.jpg"
-            },
-            "animations": {
-                "enter": {},
-                "leave": {}
-            }
-        }, {
-            "type": "image",
-            "name": "highlight",
-            "hidden": true,
-            "surface": {
-                "coordinate": "bottom",
-                "x": 120,
-                "y": -95,
-                "width": 61,
-                "height": 76,
-                "borderSize": 1,
-                "borderColor": "black",
-                "fill": "transparent"
-            },
-            "attributes": {
-                "src": "http://hiphotos.baidu.com/doc/pic/item/8644ebf81a4c510f1f3555ac6559252dd52aa597.jpg"
-            },
-            "animations": {
-                "enter": {},
-                "leave": {}
-            }
-        }, {
-            "type": "image",
-            "name": "highlight",
-            "hidden": true,
-            "surface": {
-                "coordinate": "bottom",
-                "x": 216,
-                "y": -96,
-                "width": 66,
-                "height": 76,
-                "borderSize": 1,
-                "borderColor": "black",
-                "fill": "transparent"
-            },
-            "attributes": {
-                "src": "http://hiphotos.baidu.com/doc/pic/item/8718367adab44aeda9560852b61c8701a18bfb68.jpg"
-            },
-            "animations": {
-                "enter": {},
-                "leave": {}
-            }
-        }, {
-            "type": "image",
-            "name": "highlight",
-            "hidden": true,
-            "surface": {
-                "coordinate": "bottom",
-                "x": 320,
-                "y": -95,
-                "width": 59,
-                "height": 76,
-                "borderSize": 1,
-                "borderColor": "black",
-                "fill": "transparent"
-            },
-            "attributes": {
-                "src": "http://hiphotos.baidu.com/doc/pic/item/7e3e6709c93d70cf0c831cbbfddcd100baa12b0e.jpg"
-            },
-            "animations": {
-                "enter": {},
-                "leave": {}
-            }
         }],
         "id": ""
     },
@@ -294,90 +210,6 @@ hubble.init({
             },
             "attributes": {
                 "src": "http://hiphotos.baidu.com/doc/pic/item/b3119313b07eca806d8d5651942397dda04483ff.jpg"
-            },
-            "animations": {
-                "enter": {},
-                "leave": {}
-            }
-        }, {
-            "type": "image",
-            "name": "highlight",
-            "hidden": true,
-            "surface": {
-                "coordinate": "bottom",
-                "x": 20,
-                "y": -95,
-                "width": 59,
-                "height": 76,
-                "borderSize": 1,
-                "borderColor": "black",
-                "fill": "transparent"
-            },
-            "attributes": {
-                "src": "http://hiphotos.baidu.com/doc/pic/item/500fd9f9d72a6059ece156ac2d34349b023bba97.jpg"
-            },
-            "animations": {
-                "enter": {},
-                "leave": {}
-            }
-        }, {
-            "type": "image",
-            "name": "highlight",
-            "hidden": true,
-            "surface": {
-                "coordinate": "bottom",
-                "x": 120,
-                "y": -95,
-                "width": 61,
-                "height": 76,
-                "borderSize": 1,
-                "borderColor": "black",
-                "fill": "transparent"
-            },
-            "attributes": {
-                "src": "http://hiphotos.baidu.com/doc/pic/item/8644ebf81a4c510f1f3555ac6559252dd52aa597.jpg"
-            },
-            "animations": {
-                "enter": {},
-                "leave": {}
-            }
-        }, {
-            "type": "image",
-            "name": "highlight",
-            "hidden": true,
-            "surface": {
-                "coordinate": "bottom",
-                "x": 216,
-                "y": -96,
-                "width": 66,
-                "height": 76,
-                "borderSize": 1,
-                "borderColor": "black",
-                "fill": "transparent"
-            },
-            "attributes": {
-                "src": "http://hiphotos.baidu.com/doc/pic/item/8718367adab44aeda9560852b61c8701a18bfb68.jpg"
-            },
-            "animations": {
-                "enter": {},
-                "leave": {}
-            }
-        }, {
-            "type": "image",
-            "name": "highlight",
-            "hidden": true,
-            "surface": {
-                "coordinate": "bottom",
-                "x": 320,
-                "y": -95,
-                "width": 59,
-                "height": 76,
-                "borderSize": 1,
-                "borderColor": "black",
-                "fill": "transparent"
-            },
-            "attributes": {
-                "src": "http://hiphotos.baidu.com/doc/pic/item/7e3e6709c93d70cf0c831cbbfddcd100baa12b0e.jpg"
             },
             "animations": {
                 "enter": {},
@@ -3250,15 +3082,15 @@ hubble.init({
 
 var swiper = new Swiper(".lg-page-container", {
     speed: 800,
-    initialSlide: 1,
+    initialSlide: 0,
     loop: true,
-    resistance: !0,
+    resistance: true,
     fade: {
-        crossFade: !0
+        crossFade: true
     },
     cube: {
-        slideShadows: !0,
-        shadow: !1,
+        slideShadows: true,
+        shadow: false,
         shadowOffset: 20,
         shadowScale: .94
     },
@@ -3267,10 +3099,10 @@ var swiper = new Swiper(".lg-page-container", {
         stretch: 0,
         depth: 100,
         modifier: 1,
-        slideShadows: !0
+        slideShadows: true
     },
-    lazyLoading: !0,
-    lazyLoadingInPrevNext: !0,
+    lazyLoading: true,
+    lazyLoadingInPrevNext: true,
     direction: "vertical",
     effect: "slide",
     pagination: ".swiper-pagination",
@@ -3298,4 +3130,13 @@ window.addEventListener("hashchange", function() {
     String(location.hash).replace(/\bpage=(\d+)/, function(e, t) {
         swiper.slideTo(+t)
     })
+});
+
+$(document.body).delegate('[data-link]', 'click', function(e) {
+    var link = $(e.currentTarget).attr('data-link');
+    if (!!link) {
+        String(link).replace(/\bpage(\d+)/, function(e, t) {
+            swiper.slideTo(+t)
+        })
+    }
 });

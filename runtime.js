@@ -119,9 +119,13 @@ function createImage(json) {
     size = size.join('');
     position = position.join('');
 
+    var link = json.surface.link || '';
+    console.log(link);
+
     return Rosetta.create('div', {
             class: 'lg-trailer animated ' + type ,
-            style: position
+            style: position,
+            'data-link': link
         }, Rosetta.create('div', {
             class: 'lg-surface',
             style: size
@@ -153,13 +157,23 @@ function getAnimation(json) {
         '-webkit-animation-direction': 'normal',
         '-webkit-animation-fill-mode': 'backwards'
     };
+    var flag = false;
 
     for (var key in enter) {
+        flag = true;
         if (key == 'name') {
             name = enter[key];
+        } else if (key == 'repeat') {
+            ani['-webkit-animation-iteration-count'] = enter[key];
+        } else if (key == 'delay') {
+            ani['-webkit-animation-delay'] = enter[key] + 's';
         } else {
             ani['-webkit-animation-' + key] = enter[key];
         }
+    }
+
+    if (!flag) {
+        ani = {};
     }
 
     return {
